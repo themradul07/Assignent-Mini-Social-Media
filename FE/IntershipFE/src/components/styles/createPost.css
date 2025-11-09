@@ -1,0 +1,21 @@
+.create-post-card {
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.input-field {
+  margin-bottom: 12px;
+}
+
+.file-input {
+  margin-top: 8px;
+}
+
+.image-preview {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  margin-top: 8px;
+}

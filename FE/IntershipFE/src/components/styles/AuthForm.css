@@ -1,0 +1,60 @@
+.auth-form-paper {
+  max-width: 400px;
+  width: 90%;
+  margin: 60px auto;
+  padding: 32px 28px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.auth-form-paper:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Make sure text fields don't overflow */
+.MuiTextField-root {
+  margin-bottom: 12px !important;
+}
+
+/* Center everything vertically for taller screens */
+@media (min-height: 700px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .auth-form-paper {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 28px 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .auth-form-paper {
+    width: 92%;
+    padding: 24px 18px;
+    margin: 30px auto;
+  }
+
+  .auth-form-paper h5 {
+    font-size: 20px;
+  }
+
+  .MuiButton-root {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Improve link + text spacing */
+.auth-form-paper .MuiTypography-body2 {
+  margin-top: 10px;
+}
