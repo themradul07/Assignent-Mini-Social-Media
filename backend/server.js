@@ -15,6 +15,12 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(()=> console.log('MongoDB connected'))
   .catch(err=> console.error('Mongo connection error', err));
 
+app.get('/', (req, res) => {
+  return res.json({
+    ok :"Working well",
+  })
+})
+
 app.use('/api/auth', authRoutes);
 app.use('/api/posts', postRoutes);
 app.use('/api/upload', uploadRoutes);
