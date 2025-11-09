@@ -9,7 +9,7 @@ import {
   Stack,
 } from "@mui/material";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
-import "./styles/CreatePost.css";
+import "./styles/createPost.css";
 import { uploadToServer } from "../lib/uploadImage";
 import { postJSON } from "../api";
 
